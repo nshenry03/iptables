@@ -1,4 +1,0 @@
-# Vagrant SSH Forwarding Locked Down
-<% @node[:iptables][:vagrantssh][:addresses].each do |address| %>
--A FWR -p tcp -s <%= address %> --dport 2222 -j ACCEPT
-<% end %>
