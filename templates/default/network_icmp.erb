@@ -1,0 +1,4 @@
+# ICMP Locked Down
+<% @node[:iptables][:icmp][:addresses].each do |address| %>
+-A FWR -p icmp -s <%= address %> -j ACCEPT
+<% end %>
